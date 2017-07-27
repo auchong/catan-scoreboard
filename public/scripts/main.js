@@ -1,6 +1,6 @@
 $(function(){
 
-    $('.player-image').on('dblclick', function(e){
+    $('.victory').on('click', function(e){
         e.preventDefault();
 
         var playerID = $(this).attr('data-id');

@@ -12,9 +12,9 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-xs-12">
-                            <img src="<%= player.image %>" alt="Player Image" class="img-circle img-responsive center-block player-image" data-id="<%= player._id %>">
+                            <img src="<%= player.image %>" alt="Player Image" class="img-circle img-responsive center-block player-image">
                             <p class="wins"><span><%= player.wins %></span> Win(s)</p>
-                            <p>Last win: <%= player.lastWin %></p>
+                            <button class="btn btn-primary btn-lg victory" data-id="<%= player._id %>"><span class="glyphicon glyphicon-flag"></span></button>
                         </div>
                     </div>
                 </div>
