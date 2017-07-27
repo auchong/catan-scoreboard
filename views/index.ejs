@@ -1,0 +1,28 @@
+<% include partials/header %>
+
+<div class="container">
+    <img src="https://preview.ibb.co/guir75/catan.jpg" alt="Catan Image" class="img-responsive center-block header-image">
+
+    <div class="row">
+        <% players.forEach(function(player){ %>
+            <div class="panel panel-default panel-<%= player.color %> text-center">
+                <div class="panel-heading panel-<%= player.color %>">
+                    <%= player.name %>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img src="<%= player.image %>" alt="Player Image" class="img-circle img-responsive center-block player-image" data-id="<%= player._id %>">
+                            <p class="wins"><span><%= player.wins %></span> Win(s)</p>
+                            <p>Last win: <%= player.lastWin %></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+
+    <a href="/player/new" class="btn btn-primary btn-block" id="newPlayer"><span class="glyphicon glyphicon-plus"></span> Add New Player</a>
+</div>
+
+<% include partials/footer %>
