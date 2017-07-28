@@ -39,26 +39,26 @@ header h1 {
 
 .blue {
     background: #0066CC;
-    background: -webkit-linear-gradient(141deg, #0066CC, #4da6ff);
-    background: linear-gradient(141deg, #0066CC, #4da6ff);
+    background: -webkit-linear-gradient(300deg, #0066CC, #7fb2e5);
+    background: linear-gradient(300deg, #0066CC, #7fb2e5);
     color: #FFF;
 }
 .orange {
     background: #ffa500;
-    background: -webkit-linear-gradient(141deg, #ffa500, #ffc967);
-    background: linear-gradient(141deg, #ffa500, #ffc967);
+    background: -webkit-linear-gradient(300deg, #ffa500, #ffdb99);
+    background: linear-gradient(300deg, #ffa500, #ffdb99);
     color: #000;
 }
 .red {
     background: #cc0000;
-    background: -webkit-linear-gradient(141deg, #cc0000, #ff3434);
-    background: linear-gradient(141deg, #cc0000, #ff3434);
+    background: -webkit-linear-gradient(300deg, #cc0000, #e57f7f);
+    background: linear-gradient(300deg, #cc0000, #e57f7f);
     color: #FFF;
 }
 .white {
-    background: #ededed;
-    background: -webkit-linear-gradient(141deg, #ededed, #FFF);
-    background: linear-gradient(141deg, #ededed, #FFF);
+    background: #e5e5e5;
+    background: -webkit-linear-gradient(300deg, #e5e5e5, #FFF);
+    background: linear-gradient(300deg, #e5e5e5, #FFF);
     color: #000;
 }
 
