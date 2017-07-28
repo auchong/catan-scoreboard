@@ -1,5 +1,7 @@
-body {
+html, body {
     font-family: 'Open Sans', serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 header {
