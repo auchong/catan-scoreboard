@@ -1,59 +1,78 @@
 body {
-    font-family: 'Roboto', serif;
-    margin-left: 15px;
-    margin-right: 15px;
+    font-family: 'Open Sans', serif;
 }
 
-.header-image {
-    margin-top: 15px;
-    margin-bottom: 15px;
+header {
+    background-color: #B83634;
+    margin-left: -15px;
+    margin-right: -15px;
 }
-
-.panel-default {
-    font-size: 18px;
+header h1 {
+    font-size: 17px;
+    color: #FFCC09;
     letter-spacing: 0.6px;
-}
-
-.panel-blue {
-    border-color: rgb(0,102,204);
-}
-
-.panel-orange {
-    border-color: rgb(255,165,0);
-}
-
-.panel-red {
-    border-color: rgb(204,0,0);
-}
-
-.panel-default>.panel-blue {
-    background-color: rgb(0,102,204);
-    color: #FFF;
-}
-
-.panel-default>.panel-orange {
-    background-color: rgb(255,165,0);
-}
-
-.panel-default>.panel-red {
-    background-color: rgb(204,0,0);
-    color: #FFF;
-}
-
-.panel-default>.panel-white {
-    background-color: rgb(255,255,255);
-}
-
-.player-image {
-    width: 150px;
-    height: 150px;
-}
-
-.wins {
-    font-size: 25px;
     margin-top: 10px;
 }
 
+.score-row {
+    height: 130px;
+    display: flex;
+    align-items: center;
+}
+.score-row .player-image {
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+.score-row > div h2 {
+    font-size: 33px;
+    letter-spacing: 1.5px
+}
+.score-row > div p {
+    font-size: 19px
+}
+.score-row .victory {
+    margin-left: auto;
+    background-color: #63bcc9;
+    border-color: #40aab9;
+}
+
+.blue {
+    background: #0066CC;
+    background: -webkit-linear-gradient(141deg, #0066CC, #4da6ff);
+    background: linear-gradient(141deg, #0066CC, #4da6ff);
+    color: #FFF;
+}
+.orange {
+    background: #ffa500;
+    background: -webkit-linear-gradient(141deg, #ffa500, #ffc967);
+    background: linear-gradient(141deg, #ffa500, #ffc967);
+    color: #000;
+}
+.red {
+    background: #cc0000;
+    background: -webkit-linear-gradient(141deg, #cc0000, #ff3434);
+    background: linear-gradient(141deg, #cc0000, #ff3434);
+    color: #FFF;
+}
+.white {
+    background: #ededed;
+    background: -webkit-linear-gradient(141deg, #ededed, #FFF);
+    background: linear-gradient(141deg, #ededed, #FFF);
+    color: #000;
+}
+
 #newPlayer {
-    margin-bottom: 15px;
+    background-color: #814040;
+    border-radius: 0;
+    width: 100%;
+    height: 70px;
+    padding-top: 15px;
+    color: #FFF;
+    font-size: 23px;
+    letter-spacing: 1.3px;
+}
+
+.zero-padding {
+    padding: 0;
 }

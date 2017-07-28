@@ -1,28 +1,33 @@
 <% include partials/header %>
 
 <div class="container">
-    <img src="https://preview.ibb.co/guir75/catan.jpg" alt="Catan Image" class="img-responsive center-block header-image">
+    <header>
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="text-center">The Settlers of Catan Leaderboard <span class="glyphicon glyphicon-stats"></span></h1>
+                <img src="https://preview.ibb.co/guir75/catan.jpg" alt="Catan Image" class="img-responsive center-block header-image">
+            </div>
+        </div>
+    </header>
+
+    <% players.forEach(function(player){ %>
+        <div class="row">
+            <div class="col-xs-12 score-row <%= player.color %>">
+                <img src="<%= player.image %>" alt="Player Image" class="img-circle img-responsive player-image">
+                <div>
+                    <h2><%= player.name %></h2>
+                    <p><span><%= player.wins %></span> Win(s)</p>
+                </div>
+                <button class="btn btn-primary btn-lg victory" data-id="<%= player._id %>"><span class="glyphicon glyphicon-flag"></span></button>
+            </div>
+        </div>
+    <% }) %>
 
     <div class="row">
-        <% players.forEach(function(player){ %>
-            <div class="panel panel-default panel-<%= player.color %> text-center">
-                <div class="panel-heading panel-<%= player.color %>">
-                    <%= player.name %>
-                </div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <img src="<%= player.image %>" alt="Player Image" class="img-circle img-responsive center-block player-image">
-                            <p class="wins"><span><%= player.wins %></span> Win(s)</p>
-                            <button class="btn btn-primary btn-lg victory" data-id="<%= player._id %>"><span class="glyphicon glyphicon-flag"></span></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <% }) %>
+        <div class="col-xs-12 zero-padding">
+            <a href="/player/new" class="btn" id="newPlayer"><span class="glyphicon glyphicon-plus"></span> Add New Player</a>
+        </div>
     </div>
-
-    <a href="/player/new" class="btn btn-primary btn-block" id="newPlayer"><span class="glyphicon glyphicon-plus"></span> Add New Player</a>
 </div>
 
 <% include partials/footer %>
