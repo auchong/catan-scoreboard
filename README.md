@@ -19,5 +19,5 @@ Link to the live app on heroku - https://catan-scoreboard.herokuapp.com/
 3. Run `> npm install` to download project dependencies
 4. Start MongoDB daemon `> mongod`
 5. Start the app `> node app.js`
-6. Navigate to `http://localhost:8080' in your browser
+6. Navigate to `http://localhost:8080` in your browser
 
